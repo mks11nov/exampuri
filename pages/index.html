@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="hi" data-lang="hi">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+
+  <!-- ══ SEO ══ -->
+  <title>ExamPuri — India's #1 Free Mock Test Series | SSC, Banking, Railway, UPSC</title>
+  <meta name="description" content="Free mock tests for SSC CGL, CHSL, Banking SBI PO, IBPS, Railway RRB NTPC. Get All India Rank, AI analytics, PYQ bank. Join 50,000+ students. Hindi & English."/>
+  <meta name="keywords" content="mock test, SSC CGL, SBI PO, IBPS PO, RRB NTPC, free test series, government exam preparation, hindi medium"/>
+  <link rel="canonical" href="https://exampuri.in/"/>
+  <meta property="og:title" content="ExamPuri — Free Mock Tests for SSC, Banking, Railway"/>
+  <meta property="og:description" content="India's most affordable test series. 10,000+ mock tests, AI analytics, All India Rank. Start free today."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://exampuri.in/"/>
+  <meta name="robots" content="index, follow"/>
+
+  <!-- ══ Analytics (replace IDs) ══ -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
+  <script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','XXXXXXXXXXXXXXXX');fbq('track','PageView');</script> -->
+
+  <link rel="stylesheet" href="style.css"/>
+  <script src="main.js" defer></script>
+
+  <!-- Schema.org structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "ExamPuri",
+    "url": "https://exampuri.in",
+    "description": "India's leading online test series platform for government exam preparation",
+    "telephone": "+91-9631715181",
+    "email": "mynewguruji@gmail.com",
+    "sameAs": ["https://prepare.exampuri.in"]
+  }
+  </script>
+</head>
+<body>
+
+<!-- ══ NAVBAR ══ -->
+<nav id="navbar" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo">
+      <img src="https://prepare.exampuri.in/static/media/wl_client_images/66c76db57aaf4247bfd09bf13b0c6aae.jpeg" alt="ExamPuri Logo" width="34" height="34" onerror="this.style.display='none'"/>
+      <span class="nav-logo-name">ExamPuri</span>
+    </a>
+
+    <div class="nav-links">
+      <a href="../index.html"   class="nav-link active"><span class="en">Home</span><span class="hi">होम</span></a>
+      <a href="exams.html"   class="nav-link"><span class="en">All Exams</span><span class="hi">सभी Exams</span></a>
+      <a href="ssc.html"     class="nav-link">SSC</a>
+      <a href="banking.html" class="nav-link"><span class="en">Banking</span><span class="hi">बैंकिंग</span></a>
+      <a href="railway.html" class="nav-link"><span class="en">Railway</span><span class="hi">रेलवे</span></a>
+      <a href="pricing.html" class="nav-link"><span class="en">Pricing</span><span class="hi">मूल्य</span></a>
+      <a href="about.html"   class="nav-link"><span class="en">About</span><span class="hi">हमारे बारे में</span></a>
+    </div>
+
+    <div class="flex items-center gap-3" style="margin-left:auto">
+      <a href="tel:+919631715181" class="nav-phone hide-mob">📞 +91-96317 15181</a>
+
+      <div class="lang-toggle" role="group" aria-label="Language selector">
+        <button class="lang-btn" data-lang="hi" onclick="setLang('hi')" aria-label="हिंदी">हिं</button>
+        <button class="lang-btn" data-lang="en" onclick="setLang('en')" aria-label="English">EN</button>
+      </div>
+
+      <a href="https://prepare.exampuri.in" target="_blank" rel="noopener"
+         class="btn btn-primary btn-sm nav-cta-desk"
+         onclick="trackCTA('nav_start_free','prepare.exampuri.in')">
+        <span class="en">Start Free</span><span class="hi">Free शुरू करें</span>
+      </a>
+
+      <button class="mob-toggle" onclick="toggleMob()" aria-label="Toggle menu" aria-expanded="false">
+        <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+          <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile menu -->
+  <div id="mob-menu" role="menu">
+    <a href="../index.html"   class="mob-nav-item">🏠 <span class="en">Home</span><span class="hi">होम</span></a>
+    <a href="exams.html"   class="mob-nav-item">📚 <span class="en">All Exams</span><span class="hi">सभी Exams</span></a>
+    <a href="ssc.html"     class="mob-nav-item">📝 SSC CGL / CHSL / MTS</a>
+    <a href="banking.html" class="mob-nav-item">🏦 <span class="en">Banking</span><span class="hi">बैंकिंग</span> — SBI / IBPS</a>
+    <a href="railway.html" class="mob-nav-item">🚂 <span class="en">Railway</span><span class="hi">रेलवे</span> — RRB NTPC</a>
+    <a href="pricing.html" class="mob-nav-item">💰 <span class="en">Pricing</span><span class="hi">मूल्य</span></a>
+    <a href="about.html"   class="mob-nav-item">ℹ️ <span class="en">About Us</span><span class="hi">हमारे बारे में</span></a>
+    <div class="mob-cta-row">
+      <a href="https://prepare.exampuri.in" target="_blank" class="btn btn-primary btn-md w-full"
+         onclick="trackCTA('mob_start_free','prepare.exampuri.in')">
+        🆓 <span class="en">Start Free Today</span><span class="hi">Free में शुरू करें</span>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- ══ HERO ══ -->
+<section class="hero-section" aria-label="Hero">
+  <div class="container" style="position:relative;z-index:1">
+    <div style="max-width:680px">
+
+      <div class="reveal" style="margin-bottom:16px">
+        <span class="badge badge-white">
+          🔥 <span class="en">India's Most Trusted Test Series</span><span class="hi">भारत का सबसे भरोसेमंद Test Series</span>
+        </span>
+      </div>
+
+      <h1 class="reveal" style="font-size:clamp(2rem,5vw,3rem);font-weight:800;line-height:1.12;color:#fff;margin-bottom:16px;animation-delay:.05s">
+        <span class="en">Crack Your Exam &amp; Score <span style="color:#FFC947">20+ More Marks</span> — Guaranteed</span>
+        <span class="hi">Exam Crack करो और <span style="color:#FFC947">20+ Marks</span> बढ़ाओ — Guaranteed</span>
+      </h1>
+
+      <p class="reveal lead" style="color:rgba(255,255,255,.82);margin-bottom:32px;font-size:16px;animation-delay:.1s">
+        <span class="en">Real exam-level mock tests · Negative marking mastery · All India Rank · Detailed AI analytics — all on one platform.</span>
+        <span class="hi">Real exam-level mock tests · Negative marking mastery · All India Rank · Detailed AI analytics — एक ही platform पर।</span>
+      </p>
+
+      <div class="reveal flex flex-wrap gap-3" style="margin-bottom:32px;animation-delay:.15s">
+        <a href="https://prepare.exampuri.in" target="_blank" rel="noopener"
+           class="btn btn-primary btn-xl btn-pulse"
+           onclick="trackCTA('hero_free_test','prepare.exampuri.in')">
+          🆓 <span class="en">Start Free Today</span><span class="hi">आज Free शुरू करो</span>
+        </a>
+        <a href="pricing.html"
+           class="btn btn-secondary btn-xl"
+           style="border-color:rgba(255,255,255,.4);background:rgba(255,255,255,.1);color:#fff">
+          <span class="en">View Pricing →</span><span class="hi">Pricing देखो →</span>
+        </a>
+      </div>
+
+      <!-- Trust row -->
+      <div class="reveal flex flex-wrap gap-4" style="animation-delay:.2s">
+        <span class="trust-pill" style="color:rgba(255,255,255,.7)">✅ 50,000+ <span class="en">Students</span><span class="hi">Students</span></span>
+        <span class="trust-pill" style="color:rgba(255,255,255,.7)">⭐ 4.8/5 Rating</span>
+        <span class="trust-pill" style="color:rgba(255,255,255,.7)">↩️ 7-Day Refund</span>
+        <span class="trust-pill" style="color:rgba(255,255,255,.7)">🇮🇳 <span class="en">Made for India</span><span class="hi">भारत के लिए</span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ MARQUEE ══ -->
+<div style="background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:12px 0">
+  <div class="marquee-outer">
+    <div class="marquee-track" id="marquee-track"></div>
+  </div>
+</div>
+
+<!-- ══ STATS ══ -->
+<section class="section-white section-sm" aria-label="Statistics">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1px;background:var(--border);border:1px solid var(--border);border-radius:var(--r-lg);overflow:hidden">
+      <div class="stat-box reveal bg-white"><div class="stat-num">50K+</div><div class="stat-label"><span class="en">Active Students</span><span class="hi">Active Students</span></div></div>
+      <div class="stat-box reveal bg-white" style="animation-delay:.07s"><div class="stat-num">10K+</div><div class="stat-label"><span class="en">Mock Tests</span><span class="hi">Mock Tests</span></div></div>
+      <div class="stat-box reveal bg-white" style="animation-delay:.14s"><div class="stat-num">89%</div><div class="stat-label"><span class="en">Score Improvement</span><span class="hi">Score Improvement</span></div></div>
+      <div class="stat-box reveal bg-white" style="animation-delay:.21s"><div class="stat-num">4.8★</div><div class="stat-label"><span class="en">Student Rating</span><span class="hi">Student Rating</span></div></div>
+      <div class="stat-box reveal bg-white" style="animation-delay:.28s"><div class="stat-num">15+</div><div class="stat-label"><span class="en">Exams Covered</span><span class="hi">Exams Covered</span></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ══ EXAM CARDS ══ -->
+<section class="section section-grey" aria-label="Choose your exam">
+  <div class="container">
+    <div class="section-header">
+      <span class="badge badge-blue reveal">📚 <span class="en">Choose Your Exam</span><span class="hi">अपना Exam चुनो</span></span>
+      <h2 class="h1 reveal mt-3">
+        <span class="en">Specialized Test Series for <span class="text-accent">Every Government Exam</span></span>
+        <span class="hi">हर Government Exam के लिए <span class="text-accent">Specialized Test Series</span></span>
+      </h2>
+      <p class="lead reveal mt-3">
+        <span class="en">Exam-specific mock tests, PYQs, and analytics tailored for each exam pattern</span>
+        <span class="hi">हर exam के pattern के हिसाब से tailored mock tests, PYQs, और analytics</span>
+      </p>
+    </div>
+
+    <div class="grid-auto">
+
+      <a href="ssc.html" class="exam-card reveal">
+        <div class="flex items-start gap-3 mb-3">
+          <div class="feat-icon feat-icon-accent">📝</div>
+          <div>
+            <div class="h3">SSC</div>
+            <div class="text-muted fs-13">CGL · CHSL · MTS · CPO · GD</div>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-2 mb-3">
+          <span class="badge badge-accent">2,500+ Tests</span>
+          <span class="badge badge-green">PYQ 2015–24</span>
+        </div>
+        <div class="flex items-center gap-2 text-accent fw-6 fs-13">
+          <span class="en">Explore SSC Series</span><span class="hi">SSC Series देखो</span>
+          <span>→</span>
+        </div>
+      </a>
+
+      <a href="banking.html" class="exam-card reveal" style="animation-delay:.06s">
+        <div class="flex items-start gap-3 mb-3">
+          <div class="feat-icon feat-icon-blue">🏦</div>
+          <div>
+            <div class="h3"><span class="en">Banking</span><span class="hi">बैंकिंग</span></div>
+            <div class="text-muted fs-13">SBI PO · IBPS PO · Clerk · RRB</div>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-2 mb-3">
+          <span class="badge badge-blue">1,800+ Tests</span>
+          <span class="badge badge-green">Live Rank</span>
+        </div>
+        <div class="flex items-center gap-2 text-accent fw-6 fs-13">
+          <span class="en">Explore Banking</span><span class="hi">Banking Series देखो</span>
+          <span>→</span>
+        </div>
+      </a>
+
+      <a href="railway.html" class="exam-card reveal" style="animation-delay:.12s">
+        <div class="flex items-start gap-3 mb-3">
+          <div class="feat-icon feat-icon-green">🚂</div>
+          <div>
+            <div class="h3"><span class="en">Railway</span><span class="hi">रेलवे</span></div>
+            <div class="text-muted fs-13">RRB NTPC · Group D · ALP · JE</div>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-2 mb-3">
+          <span class="badge badge-green">1,200+ Tests</span>
+          <span class="badge badge-gold">Hindi Medium</span>
+        </div>
+        <div class="flex items-center gap-2 text-accent fw-6 fs-13">
+          <span class="en">Explore Railway</span><span class="hi">Railway Series देखो</span>
+          <span>→</span>
+        </div>
+      </a>
+
+      <a href="exams.html" class="exam-card reveal" style="animation-delay:.18s">
+        <div class="flex items-start gap-3 mb-3">
+          <div class="feat-icon feat-icon-gold">🏛️</div>
+          <div>
+            <div class="h3">UPSC</div>
+            <div class="text-muted fs-13">CSE · CAPF · CDS · NDA</div>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-2 mb-3">
+          <span class="badge badge-gold">800+ Tests</span>
+          <span class="badge badge-blue">Pre + Mains</span>
+        </div>
+        <div class="flex items-center gap-2 text-accent fw-6 fs-13">
+          <span class="en">Explore UPSC</span><span class="hi">UPSC Series देखो</span>
+          <span>→</span>
+        </div>
+      </a>
+
+      <a href="exams.html" class="exam-card reveal" style="animation-delay:.24s">
+        <div class="flex items-start gap-3 mb-3">
+          <div class="feat-icon" style="background:#F3E8FF">🏅</div>
+          <div>
+            <div class="h3">State PSC</div>
+            <div class="text-muted fs-13">UP · Bihar · Rajasthan · MP</div>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-2 mb-3">
+          <span class="badge" style="background:#F3E8FF;color:#7C3AED;border:1px solid rgba(124,58,237,.2)">600+ Tests</span>
+        </div>
+        <div class="flex items-center gap-2 text-accent fw-6 fs-13">
+          <span class="en">View Tests</span><span class="hi">Tests देखो</span>
+          <span>→</span>
+        </div>
+      </a>
+
+      <a href="exams.html" class="exam-card reveal" style="animation-delay:.3s">
+        <div class="flex items-start gap-3 mb-3">
+          <div class="feat-icon feat-icon-green">🎓</div>
+          <div>
+            <div class="h3"><span class="en">Teaching</span><span class="hi">Teaching</span></div>
+            <div class="text-muted fs-13">CTET · STET · KVS · NVS</div>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-2 mb-3">
+          <span class="badge badge-green">400+ Tests</span>
+        </div>
+        <div class="flex items-center gap-2 text-accent fw-6 fs-13">
+          <span class="en">View Tests</span><span class="hi">Tests देखो</span>
+          <span>→</span>
+        </div>
+      </a>
+
+    </div>
+
+    <div class="text-center mt-8 reveal">
+      <a href="exams.html" class="btn btn-secondary btn-lg">
+        <span class="en">View All 15+ Exams →</span><span class="hi">सभी 15+ Exams देखो →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ══ FEATURES ══ -->
+<section class="section section-white" aria-label="Why ExamPuri">
+  <div class="container">
+    <div class="section-header">
+      <span class="badge badge-green reveal">✅ <span class="en">Why ExamPuri?</span><span class="hi">ExamPuri क्यों?</span></span>
+      <h2 class="h1 reveal mt-3">
+        <span class="en">Everything You Need to <span class="text-accent">Clear the Exam</span></span>
+        <span class="hi">Exam Clear करने के लिए <span class="text-accent">सब कुछ यहाँ है</span></span>
+      </h2>
+      <p class="lead reveal mt-3">
+        <span class="en">Not just tests — a complete system designed around how toppers actually prepare</span>
+        <span class="hi">सिर्फ tests नहीं — एक complete system जो toppers की तरह prepare करने के लिए बनाया है</span>
+      </p>
+    </div>
+
+    <div class="grid-auto" id="features-grid">
+      <!-- Rendered by JS -->
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ══ HOW IT WORKS ══ -->
+<section class="section section-blue" aria-label="How it works">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center">
+      <div class="reveal-l">
+        <span class="badge badge-blue mb-3"><span class="en">Process</span><span class="hi">Process</span></span>
+        <h2 class="h1 mt-3 mb-3">
+          <span class="en">Start in <span class="text-accent">4 Simple Steps</span></span>
+          <span class="hi"><span class="text-accent">4 Simple Steps</span> में शुरू करो</span>
+        </h2>
+        <p class="lead mb-6">
+          <span class="en">Takes less than 5 minutes. No credit card needed for free plan.</span>
+          <span class="hi">5 minutes से भी कम। Free plan के लिए credit card नहीं चाहिए।</span>
+        </p>
+        <div class="flex flex-col gap-3">
+          <a href="https://prepare.exampuri.in" target="_blank" rel="noopener"
+             class="btn btn-primary btn-lg" style="align-self:flex-start"
+             onclick="trackCTA('hiw_create_account','prepare.exampuri.in')">
+            🆓 <span class="en">Create Free Account</span><span class="hi">Free Account बनाओ</span>
+          </a>
+          <p class="fs-13 text-muted"><span class="en">Already have an account?</span><span class="hi">Account है?</span>
+            <a href="https://prepare.exampuri.in" target="_blank" class="text-blue fw-6"> <span class="en">Login here →</span><span class="hi">Login करो →</span></a>
+          </p>
+        </div>
+      </div>
+      <div class="reveal-r" id="steps-list"></div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ══ TESTIMONIALS ══ -->
+<section class="section section-grey" aria-label="Student testimonials">
+  <div class="container">
+    <div class="section-header">
+      <span class="badge badge-gold reveal">⭐ <span class="en">Student Results</span><span class="hi">Student Results</span></span>
+      <h2 class="h1 reveal mt-3">
+        <span class="en">Real Students. <span class="text-accent">Real Results.</span></span>
+        <span class="hi">Real Students. <span class="text-accent">Real Results.</span></span>
+      </h2>
+      <p class="lead reveal mt-3">
+        <span class="en">Students from Tier 2/3 cities clearing top government exams with ExamPuri</span>
+        <span class="hi">Tier 2/3 cities के students ExamPuri से top government exams clear कर रहे हैं</span>
+      </p>
+    </div>
+    <div class="grid-auto" id="testimonials-grid"></div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ══ PRICING PREVIEW ══ -->
+<section class="section section-white" aria-label="Pricing preview">
+  <div class="container">
+    <div class="section-header">
+      <span class="badge badge-accent reveal">💰 <span class="en">Pricing</span><span class="hi">Pricing</span></span>
+      <h2 class="h1 reveal mt-3">
+        <span class="en">Less Than One Coaching Class. <span class="text-accent">10x Better.</span></span>
+        <span class="hi">एक Coaching Class से भी सस्ता। <span class="text-accent">10x Better।</span></span>
+      </h2>
+      <p class="lead reveal mt-3">
+        <span class="en">No subscriptions. Pay once, study till your exam.</span>
+        <span class="hi">No subscriptions. एक बार pay करो, exam तक पढ़ो।</span>
+      </p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;max-width:900px;margin:0 auto" id="pricing-preview"></div>
+
+    <div class="text-center mt-6 reveal">
+      <a href="pricing.html" class="btn btn-secondary btn-md">
+        <span class="en">Compare All Plans →</span><span class="hi">सभी Plans Compare करो →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FINAL CTA BANNER ══ -->
+<section class="hero-section" style="padding:60px 20px;text-align:center">
+  <div class="container reveal" style="position:relative;z-index:1">
+    <h2 style="font-size:clamp(1.6rem,4vw,2.4rem);font-weight:800;color:#fff;margin-bottom:12px">
+      <span class="en">Your Competitors Are <span style="color:#FFC947">Already Preparing.</span></span>
+      <span class="hi">तुम्हारे Competitors <span style="color:#FFC947">अभी Prepare कर रहे हैं।</span></span>
+    </h2>
+    <p style="color:rgba(255,255,255,.75);font-size:16px;margin-bottom:32px">
+      <span class="en">Don't let another day pass without practice. Start free — upgrade anytime.</span>
+      <span class="hi">एक और दिन बिना practice के मत जाने दो। Free शुरू करो — कभी भी upgrade करो।</span>
+    </p>
+    <div class="flex justify-center flex-wrap gap-3">
+      <a href="https://prepare.exampuri.in" target="_blank" rel="noopener"
+         class="btn btn-primary btn-xl btn-pulse"
+         onclick="trackCTA('footer_cta_free','prepare.exampuri.in')">
+        🔥 <span class="en">Start Free — Right Now</span><span class="hi">अभी Free शुरू करो</span>
+      </a>
+      <a href="https://wa.me/919631715181" target="_blank" rel="noopener"
+         class="btn btn-wa btn-xl">
+        💬 <span class="en">WhatsApp Us</span><span class="hi">WhatsApp करो</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="footer-inner">
+    <div style="display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;margin-bottom:0" class="grid-4">
+      <div>
+        <div class="footer-brand">ExamPuri</div>
+        <p style="color:rgba(255,255,255,.45);font-size:13px;line-height:1.75;margin-bottom:20px">
+          <span class="en">India's most affordable test series for SSC, Banking, Railway &amp; UPSC aspirants. Hindi-medium friendly.</span>
+          <span class="hi">SSC, Banking, Railway &amp; UPSC aspirants के लिए India का सबसे affordable test series। Hindi-medium friendly।</span>
+        </p>
+        <div class="flex gap-2">
+          <a href="#" class="social-icon" aria-label="Facebook">📘</a>
+          <a href="#" class="social-icon" aria-label="Instagram">📸</a>
+          <a href="#" class="social-icon" aria-label="YouTube">▶️</a>
+          <a href="#" class="social-icon" aria-label="Telegram">✈️</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-heading"><span class="en">Exams</span><span class="hi">Exams</span></div>
+        <a href="ssc.html"     class="footer-link">SSC CGL / CHSL</a>
+        <a href="banking.html" class="footer-link"><span class="en">Banking</span><span class="hi">बैंकिंग</span></a>
+        <a href="railway.html" class="footer-link"><span class="en">Railway</span><span class="hi">रेलवे</span></a>
+        <a href="exams.html"   class="footer-link">UPSC / State PSC</a>
+        <a href="exams.html"   class="footer-link">CTET / Teaching</a>
+      </div>
+      <div>
+        <div class="footer-heading"><span class="en">Company</span><span class="hi">Company</span></div>
+        <a href="about.html"                                  class="footer-link"><span class="en">About Us</span><span class="hi">हमारे बारे में</span></a>
+        <a href="pricing.html"                                class="footer-link"><span class="en">Pricing</span><span class="hi">Pricing</span></a>
+        <a href="https://prepare.exampuri.in/exam_calendar"   target="_blank" class="footer-link"><span class="en">Exam Calendar</span><span class="hi">Exam Calendar</span></a>
+        <a href="about.html#contact"                          class="footer-link"><span class="en">Contact</span><span class="hi">Contact</span></a>
+      </div>
+      <div>
+        <div class="footer-heading"><span class="en">Legal</span><span class="hi">Legal</span></div>
+        <a href="https://prepare.exampuri.in" target="_blank" class="footer-link"><span class="en">Terms &amp; Conditions</span><span class="hi">Terms &amp; Conditions</span></a>
+        <a href="https://prepare.exampuri.in" target="_blank" class="footer-link"><span class="en">Privacy Policy</span><span class="hi">Privacy Policy</span></a>
+        <a href="https://prepare.exampuri.in" target="_blank" class="footer-link"><span class="en">Refund Policy</span><span class="hi">Refund Policy</span></a>
+        <a href="https://prepare.exampuri.in" target="_blank" class="footer-link">Sitemap</a>
+      </div>
+    </div>
+    <div class="footer-bottom flex justify-between flex-wrap gap-3">
+      <span>© 2025 ExamPuri. <span class="en">All rights reserved.</span><span class="hi">All rights reserved.</span></span>
+      <span>📞 <a href="tel:+919631715181" style="color:rgba(255,255,255,.4)">+91-96317 15181</a> · ✉️ <a href="mailto:mynewguruji@gmail.com" style="color:rgba(255,255,255,.4)">mynewguruji@gmail.com</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- ══ STICKY CTA ══ -->
+<div id="sticky-cta" role="complementary" aria-label="Quick actions">
+  <div style="flex:1;min-width:0">
+    <div class="fs-13 text-muted">
+      <span class="en">SSC Pack — </span><span class="hi">SSC Pack — </span>
+      <span class="price-old" style="font-size:12px">₹999</span>
+      <strong style="color:var(--accent);margin-left:6px">₹299</strong>
+    </div>
+    <div class="fs-13 text-muted"><span class="en">7-day money-back guarantee</span><span class="hi">7-day money-back guarantee</span></div>
+  </div>
+  <a href="https://prepare.exampuri.in" target="_blank" rel="noopener"
+     class="btn btn-secondary btn-sm"
+     onclick="trackCTA('sticky_free','prepare.exampuri.in')">
+    🆓 <span class="en">Free Test</span><span class="hi">Free Test</span>
+  </a>
+  <a href="https://prepare.exampuri.in" target="_blank" rel="noopener"
+     class="btn btn-primary btn-sm btn-pulse"
+     onclick="trackCTA('sticky_buy','prepare.exampuri.in')">
+    🔥 ₹299 <span class="en">Get Access</span><span class="hi">Access लो</span>
+  </a>
+</div>
+
+<!-- ══ PAGE SCRIPTS ══ -->
+<script>
+const FEATURES_DATA = [
+  {icon:'📝',label:{en:'10,000+ Mock Tests',hi:'10,000+ Mock Tests'},sub:{en:'Exam-level questions across all major exams',hi:'सभी major exams के exam-level questions'},bg:'feat-icon-accent'},
+  {icon:'📊',label:{en:'AI Performance Analysis',hi:'AI Performance Analysis'},sub:{en:'Weak topic detection & speed improvement',hi:'Weak topic detection & speed improvement'},bg:'feat-icon-blue'},
+  {icon:'🏆',label:{en:'All India Live Rank',hi:'All India Live Rank'},sub:{en:'Know your rank among all aspirants nationwide',hi:'सभी aspirants में अपनी rank जानो'},bg:'feat-icon-gold'},
+  {icon:'🎯',label:{en:'PYQ Bank (10 Years)',hi:'PYQ Bank (10 साल)'},sub:{en:'Previous year questions with full solutions',hi:'Previous year questions with full solutions'},bg:'feat-icon-green'},
+  {icon:'⚡',label:{en:'Negative Marking Drill',hi:'Negative Marking Drill'},sub:{en:'Smart skipping strategy — save 15–20 marks',hi:'Smart skipping strategy — 15–20 marks बचाओ'},bg:'feat-icon-accent'},
+  {icon:'💬',label:{en:'Doubt Solving',hi:'Doubt Solving'},sub:{en:'Expert faculty in Hindi + English',hi:'Expert faculty Hindi + English में'},bg:'feat-icon-blue'},
+  {icon:'📱',label:{en:'Mobile Friendly',hi:'Mobile Friendly'},sub:{en:'Perfect on any device — no app download needed',hi:'किसी भी device पर perfect — app download नहीं'},bg:'feat-icon-green'},
+  {icon:'🔄',label:{en:'Unlimited Re-attempts',hi:'Unlimited Re-attempts'},sub:{en:'Attempt each test as many times as needed',hi:'हर test जितनी बार चाहो attempt करो'},bg:'feat-icon-gold'},
+];
+
+const STEPS_DATA = [
+  {n:'01',t:{en:'Create Free Account',hi:'Free Account बनाओ'},d:{en:'30 seconds — no credit card, no spam',hi:'30 seconds — credit card नहीं, spam नहीं'}},
+  {n:'02',t:{en:'Choose Your Exam',hi:'अपना Exam चुनो'},d:{en:'SSC, Banking, Railway, UPSC — pick yours',hi:'SSC, Banking, Railway, UPSC — अपना exam चुनो'}},
+  {n:'03',t:{en:'Take the Test',hi:'Test दो'},d:{en:'Real exam interface with live timer & marking',hi:'Real exam interface with live timer & marking'}},
+  {n:'04',t:{en:'See Rank + Analytics',hi:'Rank + Analytics देखो'},d:{en:'Instantly know your All India Rank and weak areas',hi:'तुरंत जानो All India Rank और weak areas'}},
+];
+
+const TESTIMONIALS_DATA = [
+  {name:'Rohit Verma',city:'Lucknow',exam:'SSC CGL 2024',t:{en:'Used to score 115, now consistently 138+. The negative marking section completely changed my approach.',hi:'पहले 115 marks आते थे, अब consistently 138+ आ रहे हैं। Negative marking section ने approach पूरी बदल दी।'},stars:5,c:'#E8380D'},
+  {name:'Priya Yadav',city:'Patna',exam:'SBI PO 2024',t:{en:'Feels exactly like the real SBI PO exam. Analytics pinpointed exactly which topics I was losing marks on.',hi:'Bilkul real SBI PO exam jaisa feel hota hai. Analytics ne exactly bataya ki konse topics mein marks ja rahe the.'},stars:5,c:'#1565C0'},
+  {name:'Amit Singh',city:'Kanpur',exam:'SSC CGL Mains',t:{en:'₹299 for all this? 10x better than coaching. The All India rank comparison really motivated me.',hi:'₹299 mein itna? Coaching se 10x better. All India rank comparison ne bahut motivate kiya.'},stars:5,c:'#2E7D32'},
+  {name:'Sunita Devi',city:'Varanasi',exam:'RRB NTPC 2024',t:{en:'Hindi medium interface is perfect. Weekly GK updates are super accurate. Cleared CBT 1 in first attempt!',hi:'Hindi medium interface bilkul perfect hai. Weekly GK updates bahut accurate hain. Pehle attempt mein CBT 1 clear!'},stars:5,c:'#F9A825'},
+  {name:'Rahul Gupta',city:'Gorakhpur',exam:'IBPS PO 2024',t:{en:'DI practice on ExamPuri is the best I found. Sectional cutoff tracker is a genius idea.',hi:'ExamPuri par DI practice best hai. Sectional cutoff tracker bahut genius idea hai.'},stars:5,c:'#7C3AED'},
+  {name:'Pooja Sharma',city:'Jaipur',exam:'SSC CHSL 2024',t:{en:'The 7-day refund policy gave me confidence to try. Now I am a permanent user. Results prove everything!',hi:'7-day refund policy ne try karne ka confidence diya. Ab main permanent user hoon. Results sab bol dete hain!'},stars:5,c:'#0D47A1'},
+];
+
+const PRICING_PREVIEW = [
+  {label:{en:'Free',hi:'Free'},badge:'badge-blue',price:'₹0',old:null,sub:{en:'5 mock tests + basic analytics',hi:'5 mock tests + basic analytics'},cta:{en:'Start Free',hi:'Free शुरू करो'},link:'https://prepare.exampuri.in',primary:false},
+  {label:{en:'SSC Pack',hi:'SSC Pack'},badge:'badge-accent',price:'₹299',old:'₹999',sub:{en:'2,500+ tests · CGL · CHSL · MTS',hi:'2,500+ tests · CGL · CHSL · MTS'},cta:{en:'Get SSC Access',hi:'SSC Access लो'},link:'https://prepare.exampuri.in',primary:true},
+  {label:{en:'Banking Pack',hi:'Banking Pack'},badge:'badge-blue',price:'₹399',old:'₹1,299',sub:{en:'1,800+ tests · SBI · IBPS · RRB',hi:'1,800+ tests · SBI · IBPS · RRB'},cta:{en:'Get Banking Access',hi:'Banking Access लो'},link:'https://prepare.exampuri.in',primary:false},
+];
+
+function getLang(){ return document.documentElement.getAttribute('data-lang')||'hi'; }
+function t(obj){ return typeof obj==='string'?obj:(obj[getLang()]||obj['en']||''); }
+
+function render(){
+  // Marquee
+  const mt = document.getElementById('marquee-track');
+  if(mt){
+    const items=['SSC CGL 2025','IBPS PO 2025','RRB NTPC 2025','SBI PO 2025','SSC CHSL 2025','UPSC CSE 2025','RRB Group D 2025','IBPS Clerk 2025','SSC MTS 2025','SBI Clerk 2025','CTET 2025','SSC CPO 2025'];
+    const all=[...items,...items];
+    mt.innerHTML=all.map(i=>`<div class="marquee-chip">📅 ${i}</div>`).join('');
+  }
+
+  // Features
+  const fg=document.getElementById('features-grid');
+  if(fg){
+    fg.innerHTML='';
+    FEATURES_DATA.forEach((f,i)=>{
+      const d=document.createElement('div');
+      d.className='card p-5 reveal';
+      d.style.animationDelay=`${i*.05}s`;
+      d.innerHTML=`<div class="flex items-start gap-3"><div class="feat-icon ${f.bg}">${f.icon}</div><div><div class="h4 mb-2">${t(f.label)}</div><div class="fs-14 text-muted">${t(f.sub)}</div></div></div>`;
+      fg.appendChild(d);
+    });
+  }
+
+  // Steps
+  const sl=document.getElementById('steps-list');
+  if(sl){
+    sl.innerHTML='';
+    STEPS_DATA.forEach((s,i)=>{
+      const d=document.createElement('div');
+      d.className='step-wrap reveal';
+      d.style.animationDelay=`${i*.08}s`;
+      d.innerHTML=`<div class="step-num">${s.n}</div><div class="h4 mb-1">${t(s.t)}</div><div class="fs-14 text-muted">${t(s.d)}</div>`;
+      sl.appendChild(d);
+    });
+  }
+
+  // Testimonials
+  const tg=document.getElementById('testimonials-grid');
+  if(tg){
+    tg.innerHTML='';
+    TESTIMONIALS_DATA.forEach((tm,i)=>{
+      const d=document.createElement('div');
+      d.className='testi-card reveal';
+      d.style.animationDelay=`${i*.06}s`;
+      d.innerHTML=`
+        <div class="flex items-start gap-3 mb-3">
+          <div class="avatar" style="background:${tm.c}">${tm.name.split(' ').map(n=>n[0]).join('')}</div>
+          <div>
+            <div class="h4">${tm.name}</div>
+            <div class="fs-13 text-muted">${tm.city} · ${tm.exam}</div>
+            <div class="stars mt-1">${'★'.repeat(tm.stars)}${'☆'.repeat(5-tm.stars)}</div>
+          </div>
+        </div>
+        <p class="fs-14 text-muted" style="line-height:1.75">"${t(tm.t)}"</p>`;
+      tg.appendChild(d);
+    });
+  }
+
+  // Pricing preview
+  const pp=document.getElementById('pricing-preview');
+  if(pp){
+    pp.innerHTML='';
+    PRICING_PREVIEW.forEach((p,i)=>{
+      const d=document.createElement('div');
+      d.className=`price-card reveal${p.primary?' popular':''}`;
+      d.style.animationDelay=`${i*.08}s`;
+      d.innerHTML=`
+        ${p.primary?'<div class="popular-tag">🔥 MOST POPULAR</div>':''}
+        <span class="badge ${p.badge} mb-3" style="margin-top:${p.primary?'16px':'0'}">${t(p.label)}</span>
+        <div class="flex items-baseline gap-2 mb-2" style="margin-top:12px">
+          ${p.old?`<span class="price-old">${p.old}</span>`:''}
+          <span class="price-amount">${p.price}</span>
+        </div>
+        <div class="fs-13 text-muted mb-6">${t(p.sub)}</div>
+        <a href="${p.link}" target="_blank" rel="noopener"
+           class="btn ${p.primary?'btn-primary btn-pulse':'btn-secondary'} btn-md w-full"
+           onclick="trackCTA('pricing_${i}','${p.link}')">${t(p.cta)}</a>`;
+      pp.appendChild(d);
+    });
+  }
+
+  if(typeof initReveal==='function') initReveal();
+}
+
+document.addEventListener('DOMContentLoaded', render);
+</script>
+
+</body>
+</html>
