@@ -25,11 +25,11 @@ window.EP_CONFIG = {
   ───────────────────────────────────────── */
   brand: {
     name:      "ExamPuri",
-    logo:      "https://prepare.exampuri.in/static/media/wl_client_images/66c76db57aaf4247bfd09bf13b0c6aae.jpeg",
-    phone:     "+91-96317 15181",
-    phoneHref: "tel:+919631715181",
-    email:     "mynewguruji@gmail.com",
-    whatsapp:  "https://wa.me/919631715181",
+    logo:      "/assets/logo-navbar.svg",
+    phone:     "support@exampuri.in",
+    phoneHref: "mailto:support@exampuri.com",
+    email:     "support@exampuri.com",
+    whatsapp:  "https://wa.me/919990377989",
     baseUrl:   "https://prepare.exampuri.in",   // product URL all CTAs point to
     siteUrl:   "https://exampuri.in",           // marketing site URL
   },

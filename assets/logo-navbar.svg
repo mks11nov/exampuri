@@ -1,0 +1,26 @@
+<svg width="220" height="52" viewBox="0 0 220 52" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Blue pill -->
+  <rect x="0" y="0" width="220" height="52" rx="26" fill="#1565C0"/>
+
+  <!-- Mini icon inside pill -->
+  <rect x="10" y="8" width="36" height="36" rx="9" fill="#1A237E"/>
+
+  <!-- Mini E -->
+  <rect x="17" y="14" width="4"  height="22" rx="2" fill="#ffffff"/>
+  <rect x="17" y="14" width="16" height="4"  rx="2" fill="#ffffff"/>
+  <rect x="17" y="23" width="12" height="3.5" rx="1.5" fill="#ffffff"/>
+  <rect x="17" y="32" width="16" height="4"  rx="2" fill="#ffffff"/>
+
+  <!-- Mini rank arrow -->
+  <polyline points="29,32 34,20 37,23" fill="none" stroke="#FF6B35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="37" cy="15" r="3" fill="#FF6B35"/>
+  <polyline points="34,20 37,15 40,19" fill="none" stroke="#FF6B35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="24" cy="9" r="1.5" fill="#FFC947"/>
+
+  <!-- Wordmark -->
+  <text font-family="Poppins, Nunito, Segoe UI, sans-serif" font-size="22" font-weight="800" letter-spacing="-0.5">
+    <tspan x="56" y="33" fill="#ffffff">Exam</tspan><tspan fill="#FFC947">Puri</tspan>
+  </text>
+
+</svg>

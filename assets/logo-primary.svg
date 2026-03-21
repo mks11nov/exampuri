@@ -1,0 +1,38 @@
+<svg width="540" height="160" viewBox="0 0 540 160" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Icon mark -->
+  <rect x="0" y="10" width="140" height="140" rx="32" fill="#1565C0"/>
+  <rect x="12" y="22" width="116" height="116" rx="24" fill="#1A237E"/>
+
+  <!-- Bold E -->
+  <rect x="32" y="42" width="14" height="76" rx="7" fill="#ffffff"/>
+  <rect x="32" y="42" width="58" height="14" rx="7" fill="#ffffff"/>
+  <rect x="32" y="72" width="44" height="12" rx="6" fill="#ffffff"/>
+  <rect x="32" y="104" width="58" height="14" rx="7" fill="#ffffff"/>
+
+  <!-- Rank arrow -->
+  <polyline points="82,104 98,68 108,78" fill="none" stroke="#FF6B35" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="108" cy="54" r="7" fill="#FF6B35"/>
+  <polyline points="98,68 108,54 116,66" fill="none" stroke="#FF6B35" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Sparkle dots -->
+  <circle cx="110" cy="32" r="3.5" fill="#FFC947"/>
+  <circle cx="122" cy="46" r="2.5" fill="#FFC947" opacity="0.7"/>
+  <circle cx="116" cy="22" r="2"   fill="#FF6B35" opacity="0.6"/>
+
+  <!-- Wordmark -->
+  <text font-family="Poppins, Nunito, Segoe UI, sans-serif" font-size="68" font-weight="800" letter-spacing="-2">
+    <tspan x="162" y="102" fill="#0f172a">Exam</tspan><tspan fill="#E8380D">Puri</tspan>
+  </text>
+
+  <!-- Underline accent under Puri -->
+  <rect x="330" y="112" width="142" height="5" rx="2.5" fill="#E8380D"/>
+
+  <!-- Tagline -->
+  <text x="163" y="140"
+        font-family="Poppins, Nunito, Segoe UI, sans-serif"
+        font-size="13" font-weight="500" letter-spacing="3" fill="#64748b">
+    INDIA'S TEST SERIES PLATFORM
+  </text>
+
+</svg>
