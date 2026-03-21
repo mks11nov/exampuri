@@ -3,6 +3,18 @@
  * ║   ExamPuri — Master Configuration File                       ║
  * ║   Edit this file to update all pages simultaneously          ║
  * ║   No other file needs to be touched for data/API changes     ║
+ * ╠══════════════════════════════════════════════════════════════╣
+ * ║   ⚠️  LOCAL DEVELOPMENT — CORS NOTE                          ║
+ * ║   The API at prepare.exampuri.in blocks requests from        ║
+ * ║   origin:null (which is what file:// sends).                 ║
+ * ║                                                              ║
+ * ║   ✅  Works automatically on: https://exampuri.in            ║
+ * ║   ✅  Works locally with a server:                           ║
+ * ║       npx serve .          (Node — no install needed)        ║
+ * ║       python -m http.server 8000  (Python built-in)          ║
+ * ║       Then open: http://localhost:8000/pages/ssc.html        ║
+ * ║                                                              ║
+ * ║   ❌  Does NOT work: opening ssc.html directly as a file     ║
  * ╚══════════════════════════════════════════════════════════════╝
  */
 
@@ -25,20 +37,37 @@ window.EP_CONFIG = {
   /* ─────────────────────────────────────────
      API ENDPOINTS  ← Change these anytime
      All pages read from here automatically
+
+     HOW THE PROXY WORKS:
+     ┌─────────────────────────────────────────────────────┐
+     │  Browser → localhost:3000/proxy/api/...             │
+     │         → server.js forwards to prepare.exampuri.in │
+     │         → adds CORS headers → returns to browser    │
+     └─────────────────────────────────────────────────────┘
+
+     On production (exampuri.in), the browser calls
+     prepare.exampuri.in directly — no proxy needed.
   ───────────────────────────────────────── */
   api: {
-    baseUrl:    "https://prepare.exampuri.in",
+    // Auto-detect environment:
+    //   localhost → use proxy (avoids CORS)
+    //   production → call API directly
+    get baseUrl() {
+      const h = window.location.hostname;
+      if (h === 'localhost' || h === '127.0.0.1') {
+        return window.location.origin + '/proxy';   // → server.js proxy
+      }
+      return 'https://prepare.exampuri.in';          // → direct in production
+    },
 
-    // L1: returns categories (id, name) for a given catalog node
-    // Usage: api.baseUrl + api.l1.replace("{nodeId}", id)
-    l1:         "/api/v1/ecatalog/L1/{nodeId}",
+    // L1: returns exam categories for a catalog node
+    l1:          "/api/v1/ecatalog/L1/{nodeId}",
 
-    // L2: returns exam list ([name, url, id, image]) for a category
-    // Usage: api.baseUrl + api.l2.replace("{categoryId}", id)
-    l2:         "/api/v1/ecatalog/L2/{categoryId}",
+    // L2: returns exam list for a category
+    l2:          "/api/v1/ecatalog/L2/{categoryId}",
 
     // Image base URL for exam thumbnails
-    imgBase:    "https://prepare.exampuri.in",
+    imgBase:     "https://prepare.exampuri.in",
 
     // Fallback image when exam image fails to load
     imgFallback: "https://prepare.exampuri.in/static/images/Image1_wl.png",
