@@ -1,104 +1,65 @@
 /** Government Exams — Node 525 | prepare.exampuri.in/exams/government-exams/525 */
-window.EP_PAGE_DATA={slug:'government-exams',nodeId:525,
-title:{en:'Government Exams',hi:'सरकारी परीक्षाएं'},
-hero:{
-  badge:{en:'🏛️ UPSSSC · EPFO · FCI · High Court · State SSC · PSU · Revenue',hi:'🏛️ UPSSSC · EPFO · FCI · High Court · State SSC · PSU · Revenue'},
-  headline:{en:'Sarkari Naukri Ki <span style="color:#FFC947">Taiyari Karo</span>',hi:'सरकारी नौकरी की <span style="color:#FFC947">तैयारी करो</span>'},
-  sub:{en:'60+ govt exams — State SSC · PSU · Power · Revenue · Judiciary · Central departments',hi:'60+ govt exams — State SSC · PSU · Power · Revenue · Judiciary · Central departments'},
-  price:'₹299',priceOld:'₹999',icon:'🏛️',students:'20,000+',
-},
-categories:[
-  {
-    id:'state-ssc',name:'State Staff Selection Commissions',icon:'📋',
-    categoryUrl:'/exams/government-exams/525',
-    exams:[
-      {name:'UPSSSC',url:'/ecatalog/543/upsssc',image:''},
-      {name:'Haryana SSC',url:'/ecatalog/725/haryana-ssc',image:''},
-      {name:'Jharkhand Staff Selection Commission (JSSC)',url:'/ecatalog/1879/jharkhand-staff-selection-commission-jssc',image:''},
-      {name:'Odisha Staff Selection Commission (OSSC)',url:'/ecatalog/785/odisha-staff-selection-commission-ossc',image:''},
-      {name:'Gujarat Subordinate Service Selection Board (GSSSB)',url:'/ecatalog/860/gujarat-subordinate-service-selection-board-gsssb',image:''},
-      {name:'Himachal Pradesh Staff Selection Commission (HPSSC)',url:'/ecatalog/1334/himachal-pradesh-staff-selection-commission-hpssc',image:''},
-      {name:'Jammu Kashmir Service Selection Board (JKSSB)',url:'/ecatalog/1277/jammu-kashmir-service-selection-board-jkssb',image:''},
-      {name:'Arunachal Pradesh Staff Selection Board (APSSB)',url:'/ecatalog/1637/arunachal-pradesh-staff-selection-board-apssb',image:''},
-      {name:'Uttarakhand Subordinate Service Selection Commission (UKSSSC)',url:'/ecatalog/1050/uttarakhand-subordinate-service-selection-commission-uksssc',image:''},
-      {name:'Rajasthan Staff Selection Board (RSSB)',url:'/ecatalog/753/rajasthan-staff-selection-board-rssb',image:''},
-      {name:'Chhattisgarh Vyapam',url:'/ecatalog/1732/chhattisgarh-vyapam',image:''},
-      {name:'M.P Professional Examination Board / Vyapam',url:'/ecatalog/730/mp-professional-examination-board---vyapam',image:''},
-      {name:'DSSSB',url:'/ecatalog/152/dsssb',image:''},
-    ]
+window.EP_PAGE_DATA = {
+  slug: 'government-exams',
+  nodeId: 525,
+  title: { en: 'Government Exams', hi: 'सरकारी परीक्षाएं' },
+  hero: {
+    badge: { en: '🏛️ UPSSSC · EPFO · FCI · High Court · State SSC · PSU · Revenue', hi: '🏛️ UPSSSC · EPFO · FCI · High Court · State SSC · PSU · Revenue' },
+    headline: { en: 'Sarkari Naukri Ki <span style="color:#FFC947">Taiyari Karo</span>', hi: 'सरकारी नौकरी की <span style="color:#FFC947">तैयारी करो</span>' },
+    sub: { en: '60+ govt exams — State SSC · PSU · Power · Revenue · Judiciary · Central departments', hi: '60+ govt exams — State SSC · PSU · Power · Revenue · Judiciary · Central departments' },
+    price: '₹299',
+    priceOld: '₹999',
+    icon: '🏛️',
+    students: '20,000+',
   },
-  {
-    id:'central-psu',name:'Central Govt & PSU',icon:'🏛️',
-    categoryUrl:'/exams/government-exams/525',
-    exams:[
-      {name:'Employees Provident Fund Organization (EPFO)',url:'/ecatalog/123/employees-provident-fund-organization-epfo',image:''},
-      {name:'Food Corporation of India (FCI)',url:'/ecatalog/172/food-corporation-of-india-fci',image:''},
-      {name:'India Post (Bhartiya Dak Vibhag)',url:'/ecatalog/1410/india-post-bhartiya-dak-vibhag',image:''},
-      {name:'DRDO',url:'/ecatalog/728/drdo',image:''},
-      {name:'Bhabha Atomic Research Centre (BARC)',url:'/ecatalog/782/bhabha-atomic-research-centre-barc',image:''},
-      {name:'FSSAI',url:'/ecatalog/723/fssai',image:''},
-      {name:'Central Warehousing Corporation (CWC)',url:'/ecatalog/606/central-warehousing-corporation-cwc',image:''},
-      {name:'Security Printing and Minting Corporation (SPMCIL)',url:'/ecatalog/778/security-printing-and-minting-corporation-of-india-ltd-spmcil',image:''},
-      {name:'National Consumer Disputes Redressal Commission (NCDRC)',url:'/ecatalog/826/national-consumer-disputes-redressal-commission-ncdrc',image:''},
-      {name:'National Board of Examination (NBE)',url:'/ecatalog/1834/national-board-of-examination-nbe',image:''},
-      {name:'Bureau of Indian Standards (BIS)',url:'/ecatalog/1646/bureau-of-indian-standards-bis',image:''},
-      {name:'Prasar Bharti',url:'/ecatalog/144/prasar-bharti',image:''},
-      {name:'Forest Service',url:'/ecatalog/132/forest-service',image:''},
-      {name:'Income Tax Department',url:'/ecatalog/1206/income-tax-department',image:''},
-      {name:'High Court',url:'/ecatalog/188/high-court',image:''},
-      {name:'Section Officer (Commercial Audit)',url:'/ecatalog/140/section-officer-commercial-audit',image:''},
-      {name:'Nehru Yuva Kendra Sangathan (NYKS)',url:'/ecatalog/830/nehru-yuva-kendra-sangathan-nyks',image:''},
-      {name:'Film & Television Institute of India (FTII)',url:'/ecatalog/1452/film-television-institute-of-india-ftii',image:''},
-      {name:'Mazagon Dock Shipbuilders Limited (MDL)',url:'/ecatalog/969/mazagon-dock-shipbuilders-limited-mdl',image:''},
-      {name:'Khadi and Village Industries Commission',url:'/ecatalog/761/khadi-and-village-industries-commission',image:''},
-      {name:'Kendriya Hindi Sansthan',url:'/ecatalog/959/kendriya-hindi-sansthan',image:''},
-      {name:'Motilal Nehru National Institute of Technology (MNNIT)',url:'/ecatalog/1301/motilal-nehru-national-institute-of-technology-mnnit',image:''},
-      {name:'Haryana Kurukshetra University',url:'/ecatalog/816/haryana-kurukshetra-university',image:''},
-      {name:'Bihar Combined Entrance Competitive Examination Board (BCECEB)',url:'/ecatalog/1291/bihar-combined-entrance-competitive-examination-board-bceceb',image:''},
-      {name:'NAC-TECH (NASSCOM)',url:'/ecatalog/337/nactech-nasscom',image:''},
-      {name:'CBEE - M.Sc. (BT) - JNU',url:'/ecatalog/363/cbee-msc-bt-jnu',image:''},
-    ]
-  },
-  {
-    id:'power-electricity',name:'Power & Electricity Boards',icon:'⚡',
-    categoryUrl:'/exams/government-exams/525',
-    exams:[
-      {name:'Uttar Pradesh Power Corporation Limited (UPPCL)',url:'/ecatalog/571/uttar-pradesh-power-corporation-limited-uppcl',image:''},
-      {name:'Uttar Pradesh Rajya Vidyut Utpadan Nigam Limited (UPRVUNL)',url:'/ecatalog/1852/uttar-pradesh-rajya-vidyut-utpadan-nigam-limited-uprvunl',image:''},
-      {name:'Madhya Pradesh Power Generating Company Limited (MP PGCL)',url:'/ecatalog/961/madhya-pradesh-power-generating-company-limited-mp-pgcl',image:''},
-      {name:'Maharashtra State Electricity Distribution Co. Ltd. (MAHADISCOM)',url:'/ecatalog/800/maharashtra-state-electricity-distribution-co-ltd-mahadiscom',image:''},
-      {name:'Jaipur Vidyut Vitran Nigam Limited (JVVNL)',url:'/ecatalog/1932/jaipur-vidyut-vitran-nigam-limited-jvvnl',image:''},
-      {name:'Uttarakhand Board of Technical Education (UBTER)',url:'/ecatalog/1019/uttarakhand-board-of-technical-education-ubter',image:''},
-    ]
-  },
-  {
-    id:'revenue-state',name:'Revenue & State Departments',icon:'📜',
-    categoryUrl:'/exams/government-exams/525',
-    exams:[
-      {name:'AP Village Revenue Officer',url:'/ecatalog/168/ap-village-revenue-officer',image:''},
-      {name:'Revenue Department Karnataka',url:'/ecatalog/1371/revenue-department-karnataka',image:''},
-      {name:'Revenue Department of Himachal Pradesh',url:'/ecatalog/2473/revenue-department-of-himachal-pradesh',image:''},
-      {name:'Punjab Revenue Department',url:'/ecatalog/1337/punjab-revenue-department',image:''},
-      {name:'Andhra Pradesh Grama / Ward Sachivalayam',url:'/ecatalog/1635/andhra-pradesh-grama---ward-sachivalayam',image:''},
-      {name:'UP Anganwadi',url:'/ecatalog/802/up-anganwadi',image:''},
-      {name:'Delhi Development Authority',url:'/ecatalog/1764/delhi-development-authority',image:''},
-      {name:'Chennai Metropolitan Development Authority (CMDA)',url:'/ecatalog/1675/chennai-metropolitan-development-authority-cmda',image:''},
-      {name:'APPSC (Welfare Officer)',url:'/ecatalog/158/appsc-welfare-officer',image:''},
-      {name:'OPSC (Assistant Section Officer)',url:'/ecatalog/184/opsc-assistant-section-officer',image:''},
-      {name:'Panchayath Development Officer (PDO)',url:'/ecatalog/229/panchayath-development-officer-pdo',image:''},
-      {name:'Clerk / Office Assistant / Steno',url:'/ecatalog/146/clerk---office-assistant-steno',image:''},
-      {name:'PUNSUP (Food Inspector)',url:'/ecatalog/150/punsup-food-inspector',image:''},
-      {name:'Maharashtra HSC Board',url:'/ecatalog/1009/maharashtra-hsc-board',image:''},
-    ]
-  },
-  {
-    id:'misc-govt',name:'Other Government Exams',icon:'📑',
-    categoryUrl:'/exams/government-exams/525',
-    exams:[
-      {name:'UP Combined Agriculture and Technology Entrance Test (UPCATET)',url:'/ecatalog/1326/up-combined-agriculture-and-technology-entrance-test-upcatet',image:''},
-      {name:'Bihar Rural Livelihoods Promotion Society (BRLPS)',url:'/ecatalog/751/bihar-rural-livelihoods-promotion-society-brlps',image:''},
-      {name:'AP Polycet',url:'/ecatalog/375/ap-polycet',image:''},
-      {name:'Others',url:'/ecatalog/759/others',image:''},
-    ]
-  },
-]};
+  categories: [
+    {
+      id: 'state-ssc',
+      name: 'State Staff Selection Commissions',
+      icon: '📋',
+      categoryUrl: '/exams/government-exams/525',
+      exams: [
+        { name: 'UPSSSC Auditor', url: '/tests/2397/upsssc-auditor', image: '/static/media/wl_client/251995/l2_exam_images/32af9db8bf61496cb290b7ebb093be04.png', tests: 15 },
+        { name: 'UPSSSC Enforcement Constable', url: '/tests/2392/upsssc-enforcement-constable', image: '/static/media/wl_client/251995/l2_exam_images/7dd16196d69743839fb30c62a0ae66f4.png', tests: 13 },
+        { name: 'UPSSSC Mukhya Sevika', url: '/tests/2288/upsssc-mukhya-sevika', image: '/static/media/wl_client/251995/l2_exam_images/776c8835a2a6415293043a0bb3fed220.jpeg', tests: 10 },
+        { name: 'UPSSSC ASO & ARO', url: '/tests/1091/upsssc-aso-aro', image: '/static/media/wl_client/251995/l2_exam_images/d4b9d6043bc24cf7aded97e9d729bd3d.jpeg', tests: 28 },
+        { name: 'UPSSSC Forest Guard', url: '/tests/821/upsssc-forest-guard', image: '/static/media/wl_client/251995/l2_exam_images/780c29dc54334adab9910309e6731c8c.jpeg', tests: 143 },
+        { name: 'UPSSSC Junior Engineer Civil', url: '/tests/565/upsssc-junior-engineer-je-civil', image: '/static/media/wl_client/251995/l2_exam_images/67595a11ff634e81bdf5ebb5b0a73671.jpeg', tests: 138 },
+        { name: 'UPSSSC Preliminary Eligibility Test', url: '/tests/1955/upsssc-preliminary-eligibility-test', image: '/static/media/wl_client/251995/l2_exam_images/f532020f2a8d4fbf97b163b0d43136d8.jpeg', tests: 97 },
+        { name: 'UPSSSC Junior Assistant', url: '/tests/700/upsssc-junior-assistant', image: '/static/media/wl_client/251995/l2_exam_images/c67f136784ce4779835fd69ac86ac42c.jpeg', tests: 154 },
+        { name: 'UPSSSC Rajasva Lekhpal', url: '/tests/586/upsssc-rajasva-lekhpal', image: '/static/media/wl_client/251995/l2_exam_images/06b79814fb1e48f88bcb5099f0e882ee.jpeg', tests: 134 }
+      ]
+    },
+    {
+      id: 'central-psu',
+      name: 'Central Govt & PSU',
+      icon: '🏛️',
+      categoryUrl: '/exams/government-exams/525',
+      exams: [
+        { name: 'EPFO Assistant', url: '/tests/124/epfo-assistant', image: '/static/media/wl_client/251995/l2_exam_images/4cbfb9c4087b4b679272847121bd57f0.jpg', tests: 30 },
+        { name: 'EPFO Social Security Assistant', url: '/tests/766/epfo-social-security-assistant', image: '/static/media/wl_client/251995/l2_exam_images/2a67705907c543e899243de9a7cccacc.jpg', tests: 107 },
+        { name: 'UPSC EPFO Enforcement Officer', url: '/tests/1328/upsc-epfo-enforcement-officer---account-officer', image: '/static/media/wl_client/251995/l2_exam_images/89c2c831f61f44e38ed3bf2ddb275165.jpg', tests: 104 }
+      ]
+    },
+    {
+      id: 'power-electricity',
+      name: 'Power & Electricity Boards',
+      icon: '⚡',
+      categoryUrl: '/exams/government-exams/525',
+      exams: [
+        { name: 'UPPCL Executive Assistant', url: '/tests/2281/uppcl-executive-assistant', image: '/static/media/wl_client/251995/l2_exam_images/d27f730b54e94deb8bedd20a3fc48b27.jpg', tests: 109 },
+        { name: 'UPPCL Office Assistant Grade III', url: '/tests/572/uppcl-office-assistant-grade-iii', image: '/static/media/wl_client_exam_images/1/581006e4231a492db58b935fcd2316f1.png', tests: 127 },
+        { name: 'UPPCL Assistant Accountant', url: '/tests/1537/uppcl-assistant-accountant', image: '/static/media/wl_client_exam_images/1/60dcea1fb5e045f38ca0f58b6ea1c2e4.JPG', tests: 32 }
+      ]
+    },
+    {
+      id: 'revenue-state',
+      name: 'Revenue & State Departments',
+      icon: '📜',
+      categoryUrl: '/exams/government-exams/525',
+      exams: [
+        { name: 'AP Village Revenue Officer', url: '/tests/169/ap-village-revenue-officer', image: '/static/media/wl_client_exam_images/1/1e7e772a61c24f7e92dbc96d14e8cb08.JPG', tests: 5 }
+      ]
+    }
+  ]
+};
