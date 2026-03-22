@@ -110,13 +110,12 @@ function renderNavbar(active,root){
   nav.innerHTML=`<div class="nav-wrap">
     <a href="${root}index.html" class="nav-logo">
       <img src="${C.brand.logo}" alt="${C.brand.name}" height="40" style="width:auto;height:40px" onerror="this.style.display='none'"/>
-      <span class="nav-logo-txt">${C.brand.name}</span>
     </a>
     <div class="nav-links ml-a">
       ${links.map(l=>`<a href="${l.h}" class="nav-lnk${active===l.k?' active':''}"><span class="en">${l.en}</span><span class="hi">${l.hi}</span></a>`).join('')}
     </div>
     <div class="flex ai-c g3 ml-a">
-      <a href="${C.brand.phoneHref}" class="nav-phone mob-hide">📞 ${C.brand.phone}</a>
+      <a href="mailto:${C.brand.email}" class="nav-phone mob-hide"> ✉️ ${C.brand.email}</a>
       <div class="lang-tog" role="group">
         <button class="lang-btn" data-lang="hi" onclick="setLang('hi')">हिं</button>
         <button class="lang-btn" data-lang="en" onclick="setLang('en')">EN</button>
@@ -181,7 +180,6 @@ function renderFooter(root){
       </div>
       <div>
         <div class="ft-hd">Connect</div>
-        <a href="${C.brand.phoneHref}" class="ft-lnk">📞 ${C.brand.phone}</a>
         <a href="mailto:${C.brand.email}" class="ft-lnk">✉️ ${C.brand.email}</a>
         <a href="${C.brand.baseUrl}" target="_blank" class="ft-lnk" style="color:rgba(255,255,255,.6)">🌐 prepare.exampuri.in</a>
         <a href="${C.brand.whatsapp}" target="_blank" class="ft-lnk" style="color:#25D366">💬 WhatsApp</a>
