@@ -77,8 +77,9 @@ function buildBody(body,exams){
       thumb.appendChild(img);
     }else{thumb.appendChild(mkAvatar(init))}
     a.appendChild(thumb);
+    const testsLabel = exam.tests ? `<span style="display:inline-block;background:var(--primary-lt);color:var(--primary);border-radius:4px;padding:1px 7px;font-size:11px;font-weight:700;margin-right:6px">${exam.tests} Tests</span>` : '';
     a.innerHTML+=`<div style="flex:1;min-width:0"><div class="sub-name">${exam.name}</div>
-      <div class="sm c-muted mt2"><span class="en">Start Practice →</span><span class="hi">Practice शुरू करो →</span></div></div>
+      <div class="sm c-muted mt2">${testsLabel}<span class="en">Start Practice →</span><span class="hi">Practice शुरू करो →</span></div></div>
       <svg class="sub-arrow" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>`;
     body.appendChild(a);
   });
@@ -108,13 +109,14 @@ function renderNavbar(active,root){
   ];
   nav.innerHTML=`<div class="nav-wrap">
     <a href="${root}index.html" class="nav-logo">
-      <img src="${C.brand.logo}" alt="${C.brand.name}" height="40" style="width:auto" onerror="this.style.display='none'"/>
+      <img src="${C.brand.logo}" alt="${C.brand.name}" height="40" style="width:auto;height:40px" onerror="this.style.display='none'"/>
+      <span class="nav-logo-txt">${C.brand.name}</span>
     </a>
     <div class="nav-links ml-a">
       ${links.map(l=>`<a href="${l.h}" class="nav-lnk${active===l.k?' active':''}"><span class="en">${l.en}</span><span class="hi">${l.hi}</span></a>`).join('')}
     </div>
     <div class="flex ai-c g3 ml-a">
-      <a href="${C.brand.phoneHref}" class="nav-phone mob-hide"><!--📞-->✉️ ${C.brand.phone}</a>
+      <a href="${C.brand.phoneHref}" class="nav-phone mob-hide">📞 ${C.brand.phone}</a>
       <div class="lang-tog" role="group">
         <button class="lang-btn" data-lang="hi" onclick="setLang('hi')">हिं</button>
         <button class="lang-btn" data-lang="en" onclick="setLang('en')">EN</button>
@@ -143,7 +145,23 @@ function renderFooter(root){
           <span class="en">India's most affordable test series for all competitive exams.</span>
           <span class="hi">सभी competitive exams के लिए India का सबसे affordable test series।</span>
         </p>
-        <div class="flex g2"><a href="#" class="soc-ic">📘</a><a href="#" class="soc-ic">📸</a><a href="#" class="soc-ic">▶️</a><a href="${C.brand.whatsapp}" target="_blank" class="soc-ic">💬</a></div>
+        <div class="flex g2">
+          <a href="https://www.facebook.com/exampuri.in/" target="_blank" rel="noopener" class="soc-ic" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/exampuri.in/" target="_blank" rel="noopener" class="soc-ic" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://www.youtube.com/channel/UC_ABAREp9RLp2kp8ESVW4-w" target="_blank" rel="noopener" class="soc-ic" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-2.53 12.63 12.63 0 0 0-7.64 0A4.83 4.83 0 0 1 4.41 6.69 49.21 49.21 0 0 0 4 12a49.21 49.21 0 0 0 .41 5.31 4.83 4.83 0 0 1 3.77 2.53 12.63 12.63 0 0 0 7.64 0 4.83 4.83 0 0 1 3.77-2.53A49.21 49.21 0 0 0 20 12a49.21 49.21 0 0 0-.41-5.31zM10 15V9l5 3-5 3z"/></svg>
+          </a>
+          <a href="https://twitter.com/_exampuri" target="_blank" rel="noopener" class="soc-ic" aria-label="Twitter / X">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="${C.brand.whatsapp}" target="_blank" rel="noopener" class="soc-ic" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+          </a>
+        </div>
       </div>
       <div>
         <div class="ft-hd">Exams</div>
@@ -163,7 +181,7 @@ function renderFooter(root){
       </div>
       <div>
         <div class="ft-hd">Connect</div>
-        <a href="${C.brand.phoneHref}" class="ft-lnk"><!--📞-->✉️ ${C.brand.phone}</a>
+        <a href="${C.brand.phoneHref}" class="ft-lnk">📞 ${C.brand.phone}</a>
         <a href="mailto:${C.brand.email}" class="ft-lnk">✉️ ${C.brand.email}</a>
         <a href="${C.brand.baseUrl}" target="_blank" class="ft-lnk" style="color:rgba(255,255,255,.6)">🌐 prepare.exampuri.in</a>
         <a href="${C.brand.whatsapp}" target="_blank" class="ft-lnk" style="color:#25D366">💬 WhatsApp</a>
@@ -180,3 +198,18 @@ function renderFooter(root){
 }
 
 document.addEventListener('DOMContentLoaded',()=>{initLang();initReveal();initSticky()});
+
+/* ── FAQ accordion ── */
+function initFAQ(containerId){
+  const container=document.getElementById(containerId);
+  if(!container)return;
+  container.querySelectorAll('.faq-item').forEach(item=>{
+    const q=item.querySelector('.faq-q');
+    if(!q)return;
+    q.addEventListener('click',()=>{
+      const isOpen=item.classList.contains('open');
+      container.querySelectorAll('.faq-item.open').forEach(i=>i.classList.remove('open'));
+      if(!isOpen)item.classList.add('open');
+    });
+  });
+}

@@ -26,10 +26,10 @@ window.EP_CONFIG = {
   brand: {
     name:      "ExamPuri",
     logo:      "/assets/logo-navbar.svg",
-    phone:     "support@exampuri.in",
-    phoneHref: "mailto:support@exampuri.com",
-    email:     "support@exampuri.com",
-    whatsapp:  "https://wa.me/919990377989",
+    phone:     "+91-96317 15181",
+    phoneHref: "tel:+919631715181",
+    email:     "mynewguruji@gmail.com",
+    whatsapp:  "https://wa.me/919631715181",
     baseUrl:   "https://prepare.exampuri.in",   // product URL all CTAs point to
     siteUrl:   "https://exampuri.in",           // marketing site URL
   },
@@ -189,7 +189,6 @@ window.EP_CONFIG = {
         { ok: true,  text: { en: "Sample PYQ Questions",        hi: "Sample PYQ Questions" } },
         { ok: false, text: { en: "All India Rank",              hi: "All India Rank" } },
         { ok: false, text: { en: "Negative Marking Drill",      hi: "Negative Marking Drill" } },
-        { ok: false, text: { en: "Doubt Solving",               hi: "Doubt Solving" } },
       ],
       cta:      { en: "Start Free",       hi: "Free शुरू करो" },
       link:     "https://prepare.exampuri.in",
@@ -211,7 +210,6 @@ window.EP_CONFIG = {
         { ok: true, text: { en: "PYQ Bank 2015–2024",           hi: "PYQ Bank 2015–2024" } },
         { ok: true, text: { en: "All India Live Rank",          hi: "All India Live Rank" } },
         { ok: true, text: { en: "Negative Marking Drill",       hi: "Negative Marking Drill" } },
-        { ok: true, text: { en: "Doubt Solving (Hindi+English)", hi: "Doubt Solving (Hindi+English)" } },
       ],
       cta:      { en: "Get SSC Access",   hi: "SSC Access लो" },
       link:     "https://prepare.exampuri.in",
@@ -232,7 +230,6 @@ window.EP_CONFIG = {
         { ok: true, text: { en: "DI & Reasoning Focus",         hi: "DI & Reasoning Focus" } },
         { ok: true, text: { en: "Sectional Cutoff Tracker",     hi: "Sectional Cutoff Tracker" } },
         { ok: true, text: { en: "All India Rank",               hi: "All India Rank" } },
-        { ok: true, text: { en: "Doubt Solving",                hi: "Doubt Solving" } },
       ],
       cta:      { en: "Get Banking Access", hi: "Banking Access लो" },
       link:     "https://prepare.exampuri.in",
@@ -294,7 +291,6 @@ window.EP_CONFIG = {
       features: [
         { ok: true, text: { en: "All Exam Packs Included",      hi: "सभी Exam Packs Included" } },
         { ok: true, text: { en: "10,000+ Tests",                hi: "10,000+ Tests" } },
-        { ok: true, text: { en: "Priority Doubt Solving",       hi: "Priority Doubt Solving" } },
         { ok: true, text: { en: "Lifetime Validity",            hi: "Lifetime Validity" } },
         { ok: true, text: { en: "Early Access to New Tests",    hi: "New Tests का Early Access" } },
       ],

@@ -405,3 +405,8 @@ footer{background:#0D1B2A;color:rgba(255,255,255,.75)}
 .ft-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:36px}
 @media(max-width:900px){.ft-grid{grid-template-columns:1fr 1fr!important}}
 @media(max-width:500px){.ft-grid{grid-template-columns:1fr!important}}
+
+/* ── Social icons ── */
+.soc-ic{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:8px;background:rgba(255,255,255,.15);color:#ffffff;transition:background .2s;text-decoration:none;flex-shrink:0}
+.soc-ic:hover{background:rgba(255,255,255,.28)}
+.soc-ic svg{width:18px;height:18px;display:block}
