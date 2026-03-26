@@ -26,9 +26,9 @@ window.EP_CONFIG = {
   brand: {
     name:      "ExamPuri",
     logo:      "/assets/logo-navbar.svg",
-    phone:     "+91-96317 15181",
-    phoneHref: "tel:+919631715181",
-    email:     "mynewguruji@gmail.com",
+    phone:     "",
+    phoneHref: "#",
+    email:     "support@exampuri.in",
     whatsapp:  "https://wa.me/919631715181",
     baseUrl:   "https://prepare.exampuri.in",   // product URL all CTAs point to
     siteUrl:   "https://exampuri.in",           // marketing site URL
