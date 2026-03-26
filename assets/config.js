@@ -29,7 +29,7 @@ window.EP_CONFIG = {
     phone:     "",
     phoneHref: "#",
     email:     "support@exampuri.in",
-    whatsapp:  "https://wa.me/919631715181",
+    whatsapp:  "https://wa.me/919990377989",
     baseUrl:   "https://prepare.exampuri.in",   // product URL all CTAs point to
     siteUrl:   "https://exampuri.in",           // marketing site URL
   },
